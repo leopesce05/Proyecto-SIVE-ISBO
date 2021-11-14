@@ -1,0 +1,82 @@
+.formulario{
+    justify-self: center;
+    width: 70%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary);
+    border-radius: 15px;
+    padding: 5px 0px;
+    margin: auto;
+    margin-top: 3vh;
+    
+}
+.field{
+    background-color: var(--primary);
+    border-radius: 10px;
+    height: 6vh;
+    width: 95%;
+    border: none;
+
+    padding: 0px 10px;
+    font-size: 15px;
+    color: var(--secondary);
+    font-weight: bold;
+}
+.field::placeholder{
+    color: var(--secondary);
+}
+
+.inputName{
+    color: var(--primary);
+}
+
+.input-container{
+    width: 80%;
+    margin: 10px;
+}
+
+.form-Name{
+    color: var(--primary);
+
+}
+
+.btn-enviar{
+    margin-top: 5px;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.enviar{
+    color: var(--secondary);
+    border-radius: 8px;
+    height: 40px;
+    background-color: var(--primary);
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.enviar:hover{
+    background-color: beige;
+    transition: all ease 0.2s;
+    font-size: 21px;
+    
+}
+
+@media (max-width: 500px) { 
+    .formulario{
+        border: none;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .input-container{
+        width: 90%;
+    }
+}

@@ -1,0 +1,203 @@
+*{
+    font-family: Poppins;
+}
+.body{
+    background-color: var(--secondary);
+}
+.main{
+    min-height:100vh;
+    background-color: var(--secondary);
+}
+.check-opciones{
+    display: none;
+}
+.correoLabel{
+    color: var(--primary);
+
+}
+.tab-option{
+    background-color: var(--secondary);
+    color: var(--primary);
+    display: none;
+    border-bottom: 1px solid var(--primary);
+}
+.opciones{
+    z-index: 5;
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    border-bottom: 1px solid var(--primary);
+}
+.opcion{
+    background-color: var(--secondary);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkOP{
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 20px;
+}
+.opcionName{
+    color: var(--primary);
+    text-align: center;
+}
+.linkContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    margin: 0px 15px;
+}
+.agregarTarjeta{
+    margin-bottom:10px ;
+}
+.linkOP:hover{
+    font-size: 21px;
+    transition: all ease-in 0.2s;
+    color: beige;
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+.agregarPickContainer{
+    margin-bottom: 10px;
+}
+.link{
+    text-decoration: none;
+    color: var(--primary);
+    transition: all ease-in-out 0.3s;
+    font-size: 20px;
+    border: 2px solid var(--primary);
+    padding: 3px;
+    border-radius: 3px;
+    margin-bottom: 20px !important;
+}
+.link:hover{
+    text-decoration: none;
+    color:beige;
+    text-decoration: underline;
+}
+@media (max-width: 800px){
+
+    .tab-option{
+        display: flex;
+        height: 5vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .linkOP{
+        font-size: 17px;
+    }
+    .opciones{
+        min-height: 90vh;
+        flex-flow: column nowrap;
+        height: auto;
+        position: fixed;
+        width: 100%;
+        top: 15vh;
+        left: -100%;
+        top: 20vh;
+        transition: all ease-in-out .15s;
+        align-items: flex-start;
+        justify-content: start;
+        border-bottom: none;
+        
+    }
+    
+    .check-opciones:checked ~ .opciones{
+        transition: all ease-in-out .15s;
+        left: 0%;
+    }
+}
+
+/* USUARIOS */
+
+.opcion{
+    padding: 10px;
+}
+.userCard{
+    width: 50%;
+    border: 2px solid var(--primary);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 5px 20px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}
+.opcionesUser{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.fa-trash-alt{
+    color: red;
+}
+.fa-user-edit{
+    color: var(--primary);
+}
+.informacion p{
+    color: var(--primary);
+    margin: 2px 0px;
+}
+.informacionCat p{
+    color: var(--primary);
+    margin: 2px 0px;
+}
+.informacionCat{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.boton-cat{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.boton-cat:hover{
+    color: bisque;
+}
+
+@media (max-width: 750px){
+    .userCard{
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px){
+    .userCard{
+        width: 97%;
+        flex-flow: column nowrap;
+        margin-top: 0px;
+    }
+
+    .opcionesUser{
+        flex-flow: row-reverse nowrap;
+        margin-top: 5px;
+    }
+    .informacion p{
+        font-size: 12px ;
+    }
+    .opcionName{
+        color: var(--primary);
+        font-size: 18px;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,91 @@
+.compras{
+    display: flex;
+    flex-flow: column nowrap;   
+    padding: 10px;
+}
+
+.compra{
+    display: block;
+    position: relative;
+    color: var(--primary);
+    width: 35%;
+    border: 2px solid #ADC2A9;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.3);
+}
+.estadoContainer{
+    padding: 5px;
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-radius: 0px 8px;
+    
+}
+.fecha{
+    color: #ADC2A9;
+}
+li{
+    list-style: none;
+}
+.listaProds{
+    padding: 10px;
+}
+.productosTitle{
+    color: #ADC2A9;
+    border-bottom: dashed 1px #ADC2A9;
+}
+.esperando{
+    color: var(--secondary);
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.camino{
+    color: var(--secondary);
+    font-weight: bold;
+    background-color: rgb(45, 104, 158);
+}
+
+.cancelada{
+    color: var(--secondary);
+    font-weight: bold;
+    background-color: red;
+}
+
+.finalizada{
+    color: var(--secondary);
+    font-weight: bold;
+    background-color: rgb(64, 233, 79);
+}
+.pagar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pagarBtn{
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    background-color: salmon;
+    margin: auto;
+    color: rgb(21, 9, 61);
+    width: 100%;
+}
+p{margin: 5px;}
+
+@media (max-width: 1150px) {
+
+    .compra{
+        width: 60%;
+    }
+}
+@media (max-width: 700px) {
+
+    .compra{
+        width: 90%;
+    }
+}

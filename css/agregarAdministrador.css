@@ -1,0 +1,88 @@
+.formulario{
+    margin-top: 30px;
+    justify-self: center;
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary);
+    border-radius: 15px;
+    padding: 5px 0px;
+    
+}
+.field{
+    background-color: var(--primary);
+    border-radius: 10px;
+    height: 5vh;
+    width: 95%;
+    border: none;
+    margin: 5px 10px;
+    padding: 0px 10px;
+    font-size: 15px;
+}
+.field::placeholder{
+    color: var(--secondary);
+}
+
+.btn-enviar{
+    margin-top: 5px;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.enviar{
+    color: var(--secondary);
+    border-radius: 8px;
+    height: 40px;
+    background-color: var(--primary);
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.enviar:hover{
+    background-color: beige;
+    transition: all ease 0.2s;
+    height: 44px;
+    font-size: 21px;
+}
+
+@media (max-width: 1000px) { 
+
+    .formulario{
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 760px) { 
+
+    .formulario{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 700px) { 
+
+    .formulario{
+        width: 90%;
+        border: none;
+        border-radius: 8px;
+        border-top: 2px solid var(--primary);
+        border-bottom: 2px solid var(--primary);
+
+    }
+    .field{
+        font-size: 14px ;
+    }
+
+    .enviar{
+        margin: none;
+        height: auto;
+        font-size: 18px;
+    }
+
+}

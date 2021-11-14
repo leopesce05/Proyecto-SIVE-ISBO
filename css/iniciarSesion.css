@@ -1,0 +1,132 @@
+*{
+    font-family: Poppins;
+}
+h1{
+    font-family: Poppins;
+}
+body{
+    margin: 0px;
+}
+.red{
+    color: red;
+}
+.main{
+    min-height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+}
+.formularios{
+    border: 3px solid var(--primary);
+    border-radius: 5px;
+    width: 50%;
+    min-height:75vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--secondary);
+}
+.formulario{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.title{
+    margin: 20px;
+    font-size: 60px;
+    color: var(--primary);
+}
+
+.field{
+    background-color: var(--primary);
+    border-radius: 10px;
+    height: 40px;
+    width: 70%;
+    border: none;
+    margin: 10px;
+    padding: 0px 10px;
+}
+.field::placeholder{
+    color: var(--secondary);
+}
+.btn-enviar{
+    margin-top: 20px;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.enviar{
+    color: var(--secondary);
+    width: auto;
+    border-radius: 8px;
+    background-color: var(--primary);
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+.enviar:hover{
+    background-color: beige;
+    transition: all ease 0.2s;
+    width: auto;
+    font-size: 21px;
+}
+
+.register{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Goregistrar{
+    color: #D7E9F7;
+    font-size: 14px;
+    margin: 5px;
+}
+.btn-registrar{
+    text-decoration: none;
+    color: var(--primary);
+}
+.btn-registrar:hover{
+    transition: all ease-in 0.3s;
+    text-decoration: none;
+    color: var(--primary);
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+
+@media (max-width: 900px) { 
+
+    .title{
+        font-size:50px;
+    }
+
+}
+
+@media (max-width: 750px) { 
+
+    .title{
+        font-size:40px;
+    }
+    .field{
+        width: 90%;
+    }
+
+}
+@media (max-width: 620px) { 
+
+    .formularios{
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+
+}

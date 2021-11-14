@@ -1,0 +1,79 @@
+.ventas{
+    display: flex;
+    flex-flow: column nowrap;   
+    padding: 10px;
+}
+.numeroCompra{
+    color: #ADC2A9;
+}
+.venta{
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
+    color: var(--primary);
+    width: 50%;
+    border: 2px solid #ADC2A9;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.3);
+    align-items: center;
+    overflow-wrap: break-word;
+}
+.imagenProducto{
+    border-right: dashed 1px #ADC2A9;
+    padding: 15px;
+}
+.imagen-producto{
+
+    width: 150px;
+    height: 150px;
+}
+.info{
+    padding-left: 10px;
+    word-break: break-all;
+    word-break: break-word; 
+    overflow-wrap: break-word;
+}
+.nombreProducto{
+    word-break: break-all;
+    word-break: break-word; 
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 1000px) {
+    .venta{
+        
+        width: 80%;
+    }
+}
+@media (max-width: 750px) {
+    .venta{
+        
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .ventas{
+        align-items: center;
+    }
+    .venta{
+        flex-flow: column;
+        width: 80%;
+    }
+    .imagenProducto{
+        
+        border-right: 0px;
+        border-bottom: dashed 1px #ADC2A9;
+        padding: 15px;
+    }
+    .imagen-producto{
+        width: 50vw;
+        height: 50vw;
+    }
+    .numeroCompra{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+}

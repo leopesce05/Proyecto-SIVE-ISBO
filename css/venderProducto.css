@@ -1,0 +1,117 @@
+.TituloVender{
+    color: var(--primary);
+}
+
+.opcion{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+
+}
+
+.formulario{
+    border: 3px solid var(--primary);
+    border-radius: 5px;
+    width: 40%;
+    min-height:50vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--secondary);
+}
+
+.field{
+    background-color: var(--primary);
+    border-radius: 10px;
+    height: 30px;
+    width: 95%;
+    border: none;
+    margin: 10px;
+    padding: 0px 10px;
+}
+.desc{
+    background-color: var(--primary);
+    border-radius: 10px;
+    width: 95%;
+    border: none;
+    margin: 10px;
+    padding: 0px 10px;
+}
+.field::placeholder{
+    color: var(--secondary);
+}
+
+.enviar{
+    margin: 10px;
+    color: var(--secondary);
+    width: auto;
+    border-radius: 8px;
+    background-color: var(--primary);
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+.enviar:hover{
+    background-color: beige;
+    transition: all ease 0.2s;
+    width: auto;
+    font-size: 21px;
+}
+.usoContainer{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.uso label{
+    color: var(--primary);
+}
+.fotoInputContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+input #file-upload-button{
+    display: none;
+}
+
+.fotoInputContainer label{
+    font-size: 18px;
+    color: var(--primary);
+}
+
+#fotos {
+    background-color: var(--primary);
+    color: var(--secondary);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 auto 0;
+    min-height: 15px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    width: 95%;
+}
+@media (max-width: 700px){
+    .formulario{
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px){
+    .formulario{
+        width: 97%;
+        border-left: none;
+        border-right: none;
+        border-top: 3px solid var(--primary);
+        border-bottom: 3px solid var(--primary);
+        border-radius: 7px;
+    }
+}

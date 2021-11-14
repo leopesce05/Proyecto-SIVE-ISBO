@@ -1,0 +1,246 @@
+*{
+    font-family: Poppins;
+}
+
+.mostrar{
+    display: block;
+}
+.contra_error{
+    color: red;
+    margin: 0px;
+}
+.red{
+    color: red;
+    margin: 0px;
+
+}
+.main{
+    min-height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+}
+
+.forms-line{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.formularios{
+    border: 3px solid var(--primary);
+    border-radius: 5px;
+    width: 50%;
+    min-height: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary);
+}
+.formulario{
+    justify-self: center;
+    width: 70%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary);
+    border-radius: 15px;
+    padding: 5px 0px;
+    
+}
+.titles{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.title{
+    margin: 10px 5px 5px 5px;
+    font-size: 50px;
+    color: var(--primary);
+}
+.subtitle{
+    color: var(--primary);
+    font-size: 20px;
+}
+label{
+    color: var(--primary);
+    border-radius: 5px 5px 0px 0px;
+    padding: 3px;
+    padding-bottom: 1px;
+    font-size: 20px;
+    justify-self: center;
+}
+label:hover{
+    cursor: pointer;
+    background-color: #2f4a6b;
+}
+
+.dobles{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.dobles input{
+    width: 50%;
+}
+
+.main .formularios .radioEmpresa:checked ~ label.lEmpresa{
+    border: 2px solid var(--primary);
+    
+}
+
+.main .formularios .radioEmpresa:checked ~ label.lEmpresa{
+    border-top: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
+    border-bottom: 0px;
+}
+
+.main .formularios .radioUsuario:checked ~ label.lUsuario{
+    border-top: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
+    border-bottom: 0px;
+}
+
+.field{
+    background-color: var(--primary);
+    border-radius: 10px;
+    height: 5vh;
+    width: 95%;
+    border: none;
+    margin: 5px 10px;
+    padding: 0px 10px;
+    font-size: 15px;
+}
+.field::placeholder{
+    color: var(--secondary);
+}
+
+.btn-enviar{
+    margin-top: 5px;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.enviar{
+    color: var(--secondary);
+    border-radius: 8px;
+    height: 40px;
+    background-color: var(--primary);
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.enviar:hover{
+    background-color: beige;
+    transition: all ease 0.2s;
+    height: 44px;
+    font-size: 21px;
+}
+.iniciar{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    justify-self: end;
+}
+.Goiniciar{
+    color: #D7E9F7;
+    font-size: 14px;
+    margin: 5px;
+}
+.btn-iniciar{
+    text-decoration: none;
+    color: var(--primary);
+}
+.btn-iniciar:hover{
+    transition: all ease-in 0.3s;
+    text-decoration: none;
+    color: var(--primary);
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
+}
+
+.ocultar{
+    display: none;
+}
+.Goiniciar{
+    color: dimgrey;
+    font-size: 14px;
+    margin: 5px;
+}
+
+
+@media (max-width: 1000px) { 
+
+    .formularios{
+        width: 70%;
+    }
+    .formulario{
+        width: 75%;
+    }
+
+}
+
+@media (max-width: 760px) { 
+
+    .formularios{
+        width: 75%;
+    }
+    .formulario{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 700px) { 
+
+    .formularios{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    .formulario{
+        width: 90%;
+        border: none;
+        border-radius: 8px;
+        border-top: 2px solid var(--primary);
+        border-bottom: 2px solid var(--primary);
+
+    }
+    .field{
+        font-size: 14px ;
+    }
+    .dobles{
+        flex-flow: column nowrap;
+    }
+    .dobles .field{
+        width: 95%;
+    }
+    .title{
+        margin: 10px 5px 5px 5px;
+        font-size: 40px;
+    }
+    .subtitle{
+        font-size: 16px;
+    }
+    .enviar{
+        margin: none;
+        height: auto;
+        font-size: 18px;
+    }
+    label{
+        font-size: 17px;
+    }
+}
